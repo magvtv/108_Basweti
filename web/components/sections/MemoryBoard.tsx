@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import MasonryGrid from "@/components/ui/MasonryGrid";
@@ -255,15 +256,15 @@ export default function MemoryBoard() {
           viewport={{ once: true }}
           className="mt-10 text-center"
         >
-          <a
-            href="#guestbook"
+          <Link
+            href="/guestbook"
             className="inline-flex items-center gap-2 text-sm text-[var(--accent-bronze)] hover:text-[var(--accent-umber)] transition-colors"
           >
             Share a memory or tribute
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M8 3L13 8L8 13M3 8H13" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </a>
+          </Link>
         </motion.div>
 
       </div>

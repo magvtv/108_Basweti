@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn, fadeUp, staggerContainer } from "@/lib/motion";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
@@ -94,24 +95,24 @@ export default function HeroSection() {
           transition={{ delay: 0.6 }}
           className="flex flex-wrap justify-center gap-3 mt-2"
         >
-          <a
-            href="#service"
+          <Link
+            href="/service"
             className="px-5 py-2.5 text-sm tracking-wide border border-[var(--accent-umber)] text-[var(--accent-umber)] hover:bg-[var(--accent-umber)] hover:text-[var(--bg-base)] transition-colors duration-200"
           >
             Order of Service
-          </a>
-          <a
-            href="#memories"
+          </Link>
+          <Link
+            href="/memories"
             className="px-5 py-2.5 text-sm tracking-wide border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors duration-200"
           >
             Gallery
-          </a>
-          <a
-            href="#guestbook"
+          </Link>
+          <Link
+            href="/guestbook"
             className="px-5 py-2.5 text-sm tracking-wide border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors duration-200"
           >
             Leave a Tribute
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

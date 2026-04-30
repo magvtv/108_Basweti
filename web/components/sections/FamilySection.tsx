@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeUp, fadeIn, staggerContainer } from "@/lib/motion";
 import familyData from "@/content/family.json";
@@ -174,15 +175,15 @@ export default function FamilySection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <a
-            href="#service"
+          <Link
+            href="/service"
             className="inline-flex items-center gap-2 text-sm text-[var(--accent-bronze)] hover:text-[var(--accent-umber)] transition-colors"
           >
             View order of service
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M8 3L13 8L8 13M3 8H13" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </a>
+          </Link>
         </motion.div>
 
       </div>

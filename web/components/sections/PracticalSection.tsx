@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import serviceData from "@/content/order-of-service.json";
 
@@ -138,8 +139,8 @@ export default function PracticalSection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <a
-            href="#home"
+          <Link
+            href="/"
             className="inline-flex items-center gap-2 text-xs text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
             aria-label="Back to top"
           >
@@ -147,7 +148,7 @@ export default function PracticalSection() {
               <path d="M7 11V3M3 7l4-4 4 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             Back to top
-          </a>
+          </Link>
         </motion.div>
 
       </div>

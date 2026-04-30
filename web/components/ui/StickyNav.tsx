@@ -1,33 +1,26 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = [
-  { label: "Her Story", href: "#story" },
-  { label: "Family", href: "#family" },
-  { label: "Service", href: "#service" },
-  { label: "Memories", href: "#memories" },
-  { label: "Guestbook", href: "#guestbook" },
-  { label: "Legacy", href: "#legacy" },
+  { label: "Her Story", href: "/story" },
+  { label: "Family", href: "/family" },
+  { label: "Service", href: "/service" },
+  { label: "Memories", href: "/memories" },
+  { label: "Guestbook", href: "/guestbook" },
+  { label: "Legacy", href: "/legacy" },
 ];
 
 export default function StickyNav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [active, setActive] = useState("");
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 80);
-
-      const sections = navItems.map((item) => item.href.replace("#", ""));
-      for (const id of [...sections].reverse()) {
-        const el = document.getElementById(id);
-        if (el && window.scrollY >= el.offsetTop - 100) {
-          setActive(`#${id}`);
-          break;
-        }
-      }
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -45,27 +38,27 @@ export default function StickyNav() {
     >
       <div className="max-w-5xl mx-auto px-4 md:px-8 flex items-center justify-between h-[72px]">
         {/* Logo / name */}
-        <a
-          href="#home"
+        <Link
+          href="/"
           className="font-serif text-[var(--text-primary)] text-lg italic opacity-80 hover:opacity-100 transition-opacity"
         >
           Peris Basweti
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <li key={item.href}>
-              <a
+              <Link
                 href={item.href}
                 className={`text-sm tracking-wide transition-colors duration-200 ${
-                  active === item.href
+                  pathname === item.href
                     ? "text-[var(--accent-umber)] border-b border-[var(--accent-bronze)]"
                     : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                 }`}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -95,13 +88,13 @@ export default function StickyNav() {
           <ul className="flex flex-col gap-1 pt-3">
             {navItems.map((item) => (
               <li key={item.href}>
-                <a
+                <Link
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
                   className="block py-2 text-base text-[var(--text-secondary)] hover:text-[var(--text-primary)] border-b border-[var(--border-subtle)] last:border-0"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
