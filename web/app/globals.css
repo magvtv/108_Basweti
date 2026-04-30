@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* Memorial design tokens */
+:root {
+  --bg-base: #F4EFE6;
+  --bg-alt: #EAE1D2;
+  --surface-1: #CFC2AF;
+  --surface-2: #B7B0A6;
+  --text-primary: #2F2924;
+  --text-secondary: #5A5148;
+  --accent-olive: #6E7158;
+  --accent-umber: #5B4636;
+  --accent-bronze: #8A6F52;
+  --border-subtle: #D9CCBA;
+
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-lato), system-ui, -apple-system, sans-serif;
+}
+
+@theme inline {
+  --color-bg-base: var(--bg-base);
+  --color-bg-alt: var(--bg-alt);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent-olive: var(--accent-olive);
+  --color-accent-umber: var(--accent-umber);
+  --color-accent-bronze: var(--accent-bronze);
+  --color-border-subtle: var(--border-subtle);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+/* Base reset */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Memorial typography */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+/* Sepia image overlay — apply .img-memorial to any img wrapper */
+.img-memorial {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-memorial img {
+  filter: sepia(35%) saturate(80%) contrast(90%);
+  transition: filter 0.4s ease;
+}
+
+.img-memorial:hover img {
+  filter: sepia(20%) saturate(90%) contrast(95%);
+}
+
+/* Vignette overlay */
+.img-memorial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(47, 41, 36, 0.25) 100%);
+  pointer-events: none;
+}
+
+/* Grain texture overlay */
+.img-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* Decorative divider */
+.memorial-divider {
+  width: 60px;
+  height: 1px;
+  background-color: var(--accent-bronze);
+  margin: 2rem auto;
+  opacity: 0.6;
+}
+
+/* Language label badges */
+.lang-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 2px;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  background: transparent;
+  font-family: var(--font-sans);
+}
+
+/* Section anchors offset for sticky nav */
+.section-anchor {
+  scroll-margin-top: 72px;
+}
+
+/* Print styles for order of service */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: #1a1a1a;
+    font-size: 11pt;
+  }
+  .print-full-width {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
