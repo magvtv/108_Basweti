@@ -1,0 +1,70 @@
+{
+  "date": "[ Date to be confirmed ]",
+  "churchName": "[ Church Name ], Kisii",
+  "homesteadName": "Basweti Homestead, Kisii County",
+  "dresscode": "Dark attire is welcome. The family requests modest, respectful dress.",
+  "ceremonyView": [
+    { "time": "8:00 AM", "item": "Family Gathering at the Homestead" },
+    { "time": "9:00 AM", "item": "Departure to Church" },
+    { "time": "10:00 AM", "item": "Church Service Begins" },
+    { "time": "10:15 AM", "item": "Opening Prayer" },
+    { "time": "10:25 AM", "item": "Scripture Reading" },
+    { "time": "10:40 AM", "item": "Congregational Hymn" },
+    { "time": "10:55 AM", "item": "Obituary Reading" },
+    { "time": "11:10 AM", "item": "Tributes — Children" },
+    { "time": "11:30 AM", "item": "Tributes — Grandchildren & Great-grandchildren" },
+    { "time": "11:50 AM", "item": "Tributes — Church & Community" },
+    { "time": "12:15 PM", "item": "Sermon" },
+    { "time": "1:00 PM", "item": "Closing Hymn & Benediction" },
+    { "time": "1:20 PM", "item": "Departure to Homestead" },
+    { "time": "2:00 PM", "item": "Burial at the Homestead" },
+    { "time": "3:00 PM", "item": "Family Gathering & Communal Meal" }
+  ],
+  "familyDetailView": [
+    {
+      "time": "8:00 AM",
+      "item": "Family Gathering at Homestead",
+      "detail": "Elder family members to convene. Clan representatives to be acknowledged. [ Coordinating elder name ]."
+    },
+    {
+      "time": "10:00 AM",
+      "item": "Church Service",
+      "detail": "Presiding pastor: [ Pastor Name ]. Choir: [ Choir Name ]. Ushers: [ Names ]."
+    },
+    {
+      "time": "10:55 AM",
+      "item": "Obituary Reading",
+      "detail": "To be read by: [ Family member name ]. Approved copy with [ Name ]."
+    },
+    {
+      "time": "11:10 AM",
+      "item": "Tributes — Children",
+      "detail": "Speaker order: [ Child 1 ], [ Child 2 ], [ Child 3 ]. 5 minutes each."
+    },
+    {
+      "time": "11:30 AM",
+      "item": "Tributes — Grandchildren",
+      "detail": "Combined tribute from grandchildren. Speaker: [ Grandchild representative ]."
+    },
+    {
+      "time": "2:00 PM",
+      "item": "Burial",
+      "detail": "Pallbearers: [ Names ]. Grave location: [ Description ]. Clan elder to lead committal prayer."
+    },
+    {
+      "time": "3:00 PM",
+      "item": "Communal Meal",
+      "detail": "Organized by: [ Name ]. Seating priority for elders and visiting family. Transport coordination: [ Contact ]."
+    }
+  ],
+  "hymns": [
+    { "title": "Abide With Me", "language": "en" },
+    { "title": "Bwana Asifiwe", "language": "sw" },
+    { "title": "[ Family Favorite Hymn ]", "language": "guz" }
+  ],
+  "contacts": [
+    { "role": "Main family coordinator", "name": "[ Name ]", "phone": "[ Phone ]" },
+    { "role": "Church liaison", "name": "[ Name ]", "phone": "[ Phone ]" },
+    { "role": "Diaspora coordinator", "name": "[ Name ]", "phone": "[ Phone / WhatsApp ]" }
+  ]
+}

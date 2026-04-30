@@ -1,0 +1,68 @@
+[
+  {
+    "id": "roots",
+    "year": "1931",
+    "labelGuz": "Obochabe Bwaye",
+    "labelSw": "Miaka ya Mapema",
+    "labelEn": "Her Roots",
+    "language": "guz",
+    "paragraph": "Peris Basweti was born into the rolling hills of Kisii, the daughter of a family deeply rooted in the land and faith of the Abagusii people. She grew up on the homestead where the rhythms of planting and harvest, prayer and community, shaped her earliest understanding of the world.",
+    "imageUrl": "/images/timeline/roots.webp",
+    "imageAlt": "The family homestead, Kisii"
+  },
+  {
+    "id": "marriage",
+    "year": "1952",
+    "labelGuz": "Enyomba Yaye",
+    "labelSw": "Ndoa na Familia",
+    "labelEn": "Marriage & Family",
+    "language": "sw",
+    "paragraph": "Alioa na kujenga nyumba yenye upendo, uvumilivu, na imani. Familia yake ilikua polepole — kila mtoto ni zawadi, kila mwaka mpya ni ushuhuda wa neema ya Mungu. Alimlea kila mmoja kwa mikono iliyojaa upole na nguvu.",
+    "imageUrl": "/images/timeline/marriage.webp",
+    "imageAlt": "Peris with her young family"
+  },
+  {
+    "id": "motherhood",
+    "year": "1955",
+    "labelGuz": "Obotaare Bwaye",
+    "labelSw": "Miaka ya Uzazi",
+    "labelEn": "Years of Motherhood",
+    "language": "en",
+    "paragraph": "Through the decades of raising her children, Peris became the quiet center of the family — the one who remembered every birthday, settled every dispute with wisdom, and kept the homestead as a place of welcome and warmth. Her door was never closed to family or neighbor.",
+    "imageUrl": "/images/timeline/motherhood.webp",
+    "imageAlt": "Peris surrounded by her children"
+  },
+  {
+    "id": "faith",
+    "year": "1970",
+    "labelGuz": "Obokori na Obotii",
+    "labelSw": "Imani na Huduma",
+    "labelEn": "Faith & Service",
+    "language": "en",
+    "paragraph": "Her faith was not confined to Sunday mornings. She was a pillar of her local congregation — leading women's fellowship, visiting the sick, teaching younger mothers, and praying over the community with a consistency that spanned decades. The church was her second home and her congregation was her extended family.",
+    "imageUrl": "/images/timeline/faith.webp",
+    "imageAlt": "Church gathering, Kisii"
+  },
+  {
+    "id": "grandchildren",
+    "year": "1985",
+    "labelGuz": "Abachokoro Baye",
+    "labelSw": "Kizazi cha Wajukuu",
+    "labelEn": "The Grandchildren Years",
+    "language": "guz",
+    "paragraph": "Nagenda na abachokoro — bake ba nkono na omorii, abee naomba na enchi yabo. Omosubati gwayo gwaagwa amang'ana, omogeni, na engoko. Kila omuzukuru anaigua sente ya akiarie — ati omuntu owe ni arete nyomba.",
+    "imageUrl": "/images/timeline/grandchildren.webp",
+    "imageAlt": "Baba with grandchildren at the homestead"
+  },
+  {
+    "id": "legacy",
+    "year": "2000",
+    "labelGuz": "Obosani Bwaye",
+    "labelSw": "Urithi Wake",
+    "labelEn": "Her Legacy at Home",
+    "language": "en",
+    "paragraph": "In her later years, Peris became the living memory of the family — the keeper of names, histories, and stories. She watched great-grandchildren arrive and gave each one a blessing. She remained on the homestead, close to the land where she was born, until she was called home in 2026.",
+    "imageUrl": "/images/timeline/legacy.webp",
+    "imageAlt": "Baba in her final years"
+  }
+]

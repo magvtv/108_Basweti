@@ -1,0 +1,62 @@
+{
+  "clanStatement": {
+    "en": "Peris Basweti was born of the Abagusii people, raised on the homestead in Kisii County, and is survived by a family that spans four generations. She is of the clan of her ancestors, and her name will be spoken at this homestead for generations to come.",
+    "sw": "Alizaliwa miongoni mwa watu wa Abagusii, akalelewa katika shamba la Kisii County, na anaachwa na familia inayoenea vizazi vinne.",
+    "guz": "Obariirwe o'Abagusii, atokerere o egesaku ye Kisii County, naanchirwe na abe baye bane na emabenga ine."
+  },
+  "homestead": "Kisii County, Kenya",
+  "children": [
+    {
+      "id": "c1",
+      "fullName": "[ Child Name ]",
+      "relationshipLabel": "First Born",
+      "house": "House of [ Name ]",
+      "photoUrl": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "c2",
+      "fullName": "[ Child Name ]",
+      "relationshipLabel": "Second Born",
+      "house": null,
+      "photoUrl": null,
+      "sortOrder": 2
+    },
+    {
+      "id": "c3",
+      "fullName": "[ Child Name ]",
+      "relationshipLabel": "Third Born",
+      "house": null,
+      "photoUrl": null,
+      "sortOrder": 3
+    }
+  ],
+  "grandchildren": [
+    {
+      "id": "g1",
+      "fullName": "[ Grandchild Name ]",
+      "relationshipLabel": "Grandchild",
+      "parentId": "c1",
+      "photoUrl": null,
+      "sortOrder": 1
+    },
+    {
+      "id": "g2",
+      "fullName": "[ Grandchild Name ]",
+      "relationshipLabel": "Grandchild",
+      "parentId": "c1",
+      "photoUrl": null,
+      "sortOrder": 2
+    }
+  ],
+  "greatGrandchildren": [
+    {
+      "id": "gg1",
+      "fullName": "[ Great-grandchild Name ]",
+      "relationshipLabel": "Great-grandchild",
+      "parentId": "g1",
+      "photoUrl": null,
+      "sortOrder": 1
+    }
+  ]
+}
