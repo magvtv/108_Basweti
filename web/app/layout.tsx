@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
 import { LanguageProvider } from "@/components/ui/LanguageSwitcher";
 import StickyNav from "@/components/ui/StickyNav";
+import OfflineNotice from "@/components/ui/OfflineNotice";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -36,11 +37,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${lato.variable}`}
+      data-scroll-behavior="smooth"
+    >
       <body className="min-h-full antialiased">
         <LanguageProvider>
           <StickyNav />
           {children}
+          <OfflineNotice />
         </LanguageProvider>
       </body>
     </html>
