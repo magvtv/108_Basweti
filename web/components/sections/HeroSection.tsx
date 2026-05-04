@@ -41,7 +41,7 @@ export default function HeroSection() {
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          className="img-memorial rounded-full overflow-hidden w-40 h-40 md:w-56 md:h-56 border-2 border-[var(--border-subtle)] shadow-lg"
+          className="img-memorial rounded-full overflow-hidden w-40 h-40 md:w-56 md:h-56 border-2 border-border-subtle shadow-lg"
         >
           <Image
             src="/images/portrait-1.jpg"
@@ -62,21 +62,21 @@ export default function HeroSection() {
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs tracking-[0.2em] uppercase text-[var(--text-secondary)]"
+            className="text-xs tracking-[0.2em] uppercase text-text-secondary"
           >
             In Loving Memory
           </motion.p>
 
           <motion.h1
             variants={fadeUp}
-            className="font-serif text-4xl md:text-6xl text-[var(--text-primary)] italic leading-tight"
+            className="font-serif text-4xl md:text-6xl text-text-primary italic leading-tight"
           >
             Peris Basweti
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
-            className="text-sm tracking-widest text-[var(--accent-bronze)] font-light"
+            className="text-sm tracking-widest text-accent-bronze font-light"
           >
             1931 &mdash; 2026
           </motion.p>
@@ -97,19 +97,19 @@ export default function HeroSection() {
         >
           <Link
             href="/service"
-            className="px-5 py-2.5 text-sm tracking-wide border border-[var(--accent-umber)] text-[var(--accent-umber)] hover:bg-[var(--accent-umber)] hover:text-[var(--bg-base)] transition-colors duration-200"
+            className="px-5 py-2.5 text-sm tracking-wide border border-accent-umber text-accent-umber hover:bg-accent-umber hover:text-bg-base transition-colors duration-200"
           >
             Order of Service
           </Link>
           <Link
             href="/memories"
-            className="px-5 py-2.5 text-sm tracking-wide border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors duration-200"
+            className="px-5 py-2.5 text-sm tracking-wide border border-border-subtle text-text-secondary hover:border-accent-bronze hover:text-text-primary transition-colors duration-200"
           >
             Gallery
           </Link>
           <Link
             href="/guestbook"
-            className="px-5 py-2.5 text-sm tracking-wide border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors duration-200"
+            className="px-5 py-2.5 text-sm tracking-wide border border-border-subtle text-text-secondary hover:border-accent-bronze hover:text-text-primary transition-colors duration-200"
           >
             Leave a Tribute
           </Link>
@@ -122,13 +122,13 @@ export default function HeroSection() {
 function TributeText() {
   return (
     <div className="max-w-xl">
-      <p className="font-serif text-base md:text-lg text-[var(--text-primary)] italic leading-relaxed">
+      <p className="font-serif text-base md:text-lg text-text-primary italic leading-relaxed">
         {tribute.en}
       </p>
-      <p className="mt-3 text-sm text-[var(--text-secondary)] leading-relaxed">
+      <p className="mt-3 text-sm text-text-secondary leading-relaxed">
         {tribute.sw}
       </p>
-      <p className="mt-2 text-sm text-[var(--text-secondary)] leading-relaxed">
+      <p className="mt-2 text-sm text-text-secondary leading-relaxed">
         {tribute.guz}
       </p>
     </div>
