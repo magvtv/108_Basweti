@@ -15,7 +15,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-4 bg-[var(--bg-base)]">
+    <main className="min-h-screen flex flex-col items-center justify-center px-4 bg-bg-base">
       <div className="max-w-lg w-full text-center">
         <div className="flex justify-center mb-6" aria-hidden="true">
           <svg
@@ -43,11 +43,11 @@ export default function Error({
           </svg>
         </div>
 
-        <h1 className="font-serif text-2xl md:text-3xl text-[var(--text-primary)]">
+        <h1 className="font-serif text-2xl md:text-3xl text-text-primary">
           Something Went Wrong
         </h1>
 
-        <p className="mt-4 text-[var(--text-secondary)] text-sm md:text-base leading-relaxed">
+        <p className="mt-4 text-text-secondary text-sm md:text-base leading-relaxed">
           An unexpected error occurred while loading this page. You can try
           again, or return to the memorial.
         </p>
@@ -57,13 +57,13 @@ export default function Error({
         <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
           <button
             onClick={reset}
-            className="px-6 py-3 border border-[var(--accent-umber)] text-[var(--accent-umber)] text-sm tracking-wide hover:bg-[var(--accent-umber)] hover:text-[var(--bg-base)] transition-colors"
+            className="px-6 py-3 border border-accent-umber text-accent-umber text-sm tracking-wide hover:bg-accent-umber hover:text-bg-base transition-colors"
           >
             Try Again
           </button>
           <Link
             href="/"
-            className="px-6 py-3 border border-[var(--border-subtle)] text-[var(--text-secondary)] text-sm tracking-wide hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors"
+            className="px-6 py-3 border border-border-subtle text-text-secondary text-sm tracking-wide hover:border-accent-bronze hover:text-text-primary transition-colors"
           >
             Return Home
           </Link>

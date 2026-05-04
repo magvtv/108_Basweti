@@ -30,7 +30,7 @@ export default function OfflineNotice() {
     <div
       role="alert"
       aria-live="assertive"
-      className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--accent-umber)] text-[var(--bg-base)] px-4 py-3 flex items-center justify-center gap-3 text-sm no-print"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-accent-umber text-bg-base px-4 py-3 flex items-center justify-center gap-3 text-sm no-print"
     >
       <svg
         width="16"
