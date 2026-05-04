@@ -30,9 +30,10 @@ export default function NotFound() {
 
           <div className="memorial-divider" aria-hidden="true" />
 
-          <nav
+          <div
             className="flex flex-col sm:flex-row gap-3 justify-center mt-6"
-            aria-label="Recovery navigation"
+            role="group"
+            aria-label="Recovery links"
           >
             <Link
               href="/"
@@ -41,18 +42,12 @@ export default function NotFound() {
               Return Home
             </Link>
             <Link
-              href="/story"
+              href="/guestbook"
               className="px-6 py-3 border border-border-subtle text-text-secondary text-sm tracking-wide hover:border-accent-bronze hover:text-text-primary transition-colors"
             >
-              Her Story
+              Leave a Tribute
             </Link>
-            <Link
-              href="/service"
-              className="px-6 py-3 border border-border-subtle text-text-secondary text-sm tracking-wide hover:border-accent-bronze hover:text-text-primary transition-colors"
-            >
-              Order of Service
-            </Link>
-          </nav>
+          </div>
         </div>
       </div>
 

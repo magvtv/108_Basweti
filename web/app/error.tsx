@@ -17,13 +17,15 @@ export default function Error({
   return (
     <main className="min-h-screen flex flex-col items-center justify-center px-4 bg-bg-base">
       <div className="max-w-lg w-full text-center">
-        <div className="flex justify-center mb-6" aria-hidden="true">
+        <div className="flex justify-center mb-6">
           <svg
             width="48"
             height="48"
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            focusable="false"
           >
             <circle
               cx="24"
