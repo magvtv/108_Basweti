@@ -2,16 +2,16 @@
 
 /* Memorial design tokens */
 :root {
-  --bg-base: #F4EFE6;
-  --bg-alt: #EAE1D2;
-  --surface-1: #CFC2AF;
-  --surface-2: #B7B0A6;
-  --text-primary: #2F2924;
-  --text-secondary: #5A5148;
-  --accent-olive: #6E7158;
-  --accent-umber: #5B4636;
-  --accent-bronze: #8A6F52;
-  --border-subtle: #D9CCBA;
+  --bg-base: #F5F0F5;
+  --bg-alt: #E8E0E8;
+  --surface-1: #D0C4D4;
+  --surface-2: #B8ADB8;
+  --text-primary: #2A1F2E;
+  --text-secondary: #4A3D50;
+  --accent-olive: #6B4B7A;
+  --accent-umber: #533B5F;
+  --accent-bronze: #7A5C87;
+  --border-subtle: #D4C7D9;
 
   --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-lato), system-ui, -apple-system, sans-serif;
@@ -77,7 +77,7 @@ h1, h2, h3, h4 {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 50%, rgba(47, 41, 36, 0.25) 100%);
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(42, 31, 46, 0.25) 100%);
   pointer-events: none;
 }
 

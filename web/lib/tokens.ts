@@ -1,14 +1,14 @@
 export const colors = {
-  bgBase: "#F4EFE6",
-  bgAlt: "#EAE1D2",
-  surface1: "#CFC2AF",
-  surface2: "#B7B0A6",
-  textPrimary: "#2F2924",
-  textSecondary: "#5A5148",
-  accentOlive: "#6E7158",
-  accentUmber: "#5B4636",
-  accentBronze: "#8A6F52",
-  borderSubtle: "#D9CCBA",
+  bgBase: "#F5F0F5",
+  bgAlt: "#E8E0E8",
+  surface1: "#D0C4D4",
+  surface2: "#B8ADB8",
+  textPrimary: "#2A1F2E",
+  textSecondary: "#4A3D50",
+  accentOlive: "#6B4B7A",
+  accentUmber: "#533B5F",
+  accentBronze: "#7A5C87",
+  borderSubtle: "#D4C7D9",
 } as const;
 
 export const fonts = {
