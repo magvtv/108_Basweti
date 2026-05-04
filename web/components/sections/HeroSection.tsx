@@ -44,7 +44,7 @@ export default function HeroSection() {
           className="img-memorial rounded-full overflow-hidden w-40 h-40 md:w-56 md:h-56 border-2 border-[var(--border-subtle)] shadow-lg"
         >
           <Image
-            src="/images/placeholder-portrait.jpg"
+            src="/images/portrait-1.jpg"
             alt="Portrait of Peris Basweti"
             width={224}
             height={224}

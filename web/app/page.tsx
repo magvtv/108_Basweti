@@ -1,46 +1,75 @@
 import Link from "next/link";
 import HeroSection from "@/components/sections/HeroSection";
 import Footer from "@/components/ui/Footer";
+import { pages } from "@/lib/config/pages";
+
+const chapterLinks = [
+  pages.service,
+  pages.memories,
+  pages.story,
+  pages.family,
+  pages.legacy,
+];
 
 export default function MemorialPage() {
   return (
     <main>
       <HeroSection />
-      <section className="py-16 md:py-20 bg-[var(--bg-alt)]">
+
+      <section className="py-16 md:py-20 bg-bg-alt">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
-          <div className="text-center mb-10">
-            <h2 className="font-serif italic text-2xl md:text-4xl text-[var(--text-primary)]">
-              Explore Her Story in Chapters
+
+          {/* Primary CTA — always live */}
+          <div className="text-center mb-12">
+            <p className="text-xs tracking-[0.2em] uppercase text-text-secondary mb-4">
+              Open Now
+            </p>
+            <Link
+              href="/guestbook"
+              className="inline-block px-8 py-3 text-sm tracking-wide border border-accent-umber text-accent-umber hover:bg-accent-umber hover:text-bg-base transition-colors duration-200"
+            >
+              Leave a Tribute in the Guestbook
+            </Link>
+          </div>
+
+          {/* Chapter grid */}
+          <div className="text-center mb-8">
+            <h2 className="font-serif italic text-2xl md:text-3xl text-text-primary">
+              More chapters coming soon
             </h2>
-            <p className="mt-3 text-sm md:text-base text-[var(--text-secondary)] max-w-2xl mx-auto">
-              This memorial archive is now organized into focused pages for easier reading by elders,
-              family, and diaspora visitors.
+            <p className="mt-2 text-sm text-text-secondary max-w-md mx-auto leading-relaxed">
+              We are building the full memorial archive. Each section will unlock as it is ready.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Link href="/service" className="border border-[var(--accent-umber)] text-[var(--accent-umber)] px-5 py-3 text-center hover:bg-[var(--accent-umber)] hover:text-[var(--bg-base)] transition-colors">
-              Order of Service
-            </Link>
-            <Link href="/memories" className="border border-[var(--border-subtle)] text-[var(--text-secondary)] px-5 py-3 text-center hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors">
-              Gallery
-            </Link>
-            <Link href="/guestbook" className="border border-[var(--border-subtle)] text-[var(--text-secondary)] px-5 py-3 text-center hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors">
-              Leave a Tribute
-            </Link>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {chapterLinks.map((page) =>
+              page.live ? (
+                <Link
+                  key={page.href}
+                  href={page.href}
+                  className="border border-border-subtle text-text-secondary px-5 py-4 text-center text-sm hover:border-accent-bronze hover:text-text-primary transition-colors"
+                >
+                  {page.label}
+                </Link>
+              ) : (
+                <div
+                  key={page.href}
+                  className="border border-border-subtle px-5 py-4 text-center text-sm opacity-40 select-none"
+                  aria-label={`${page.label} — coming soon`}
+                >
+                  <span className="block text-text-secondary">{page.label}</span>
+                  <span className="block text-[10px] tracking-widest uppercase text-text-secondary mt-0.5">
+                    Soon
+                  </span>
+                </div>
+              )
+            )}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <Link href="/story" className="border border-[var(--border-subtle)] text-[var(--text-secondary)] px-5 py-4 text-center hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors">
-              Life Story & Timeline
-            </Link>
-            <Link href="/family" className="border border-[var(--border-subtle)] text-[var(--text-secondary)] px-5 py-4 text-center hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors">
-              Family & Testimonies
-            </Link>
-            <Link href="/legacy" className="border border-[var(--border-subtle)] text-[var(--text-secondary)] px-5 py-4 text-center hover:border-[var(--accent-bronze)] hover:text-[var(--text-primary)] transition-colors">
-              Legacy & Remembrance
-            </Link>
-          </div>
+
         </div>
       </section>
+
       <Footer />
     </main>
   );
