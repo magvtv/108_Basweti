@@ -1,7 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabase, TributeInsert } from "@/lib/supabase";
+import { getSupabaseClient, TributeInsert } from "@/lib/supabase";
 
 export async function POST(req: NextRequest) {
+  const supabase = getSupabaseClient();
+  if (!supabase) {
+    console.error("[tributes] missing Supabase environment variables");
+    return NextResponse.json(
+      { error: "Guestbook is temporarily unavailable. Please try again later." },
+      { status: 503 }
+    );
+  }
+
   let body: TributeInsert;
 
   try {
