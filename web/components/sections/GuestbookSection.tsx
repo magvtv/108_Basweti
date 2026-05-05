@@ -257,7 +257,7 @@ export default function GuestbookSection() {
                       required
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      className="w-full border border-border-subtle bg-bg-alt px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-accent-bronze"
+                      className="w-full border border-border-subtle bg-bg-alt px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary placeholder:opacity-60 focus:outline-none focus:border-accent-bronze"
                       placeholder="Full name"
                     />
                   </div>
@@ -297,7 +297,7 @@ export default function GuestbookSection() {
                     type="text"
                     value={country}
                     onChange={(e) => setCountry(e.target.value)}
-                    className="w-full border border-border-subtle bg-bg-alt px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-accent-bronze"
+                    className="w-full border border-border-subtle bg-bg-alt px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary placeholder:opacity-60 focus:outline-none focus:border-accent-bronze"
                     placeholder="e.g. Kenya, United Kingdom, USA"
                   />
                 </div>
