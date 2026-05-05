@@ -316,7 +316,7 @@ export default function GuestbookSection() {
                     required
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="w-full border border-border-subtle bg-bg-alt px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-accent-bronze resize-none"
+                    className="w-full border border-border-subtle bg-bg-alt px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary placeholder:opacity-60 focus:outline-none focus:border-accent-bronze resize-none"
                     placeholder="Write your condolence, memory, prayer, or testimony here. You may write in English, Kiswahili, or Ekegusii."
                   />
                 </div>
