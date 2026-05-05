@@ -52,9 +52,9 @@ export default function StickyNav() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`text-sm tracking-wide transition-colors duration-200 ${
+                  className={`inline-block pb-1 text-sm tracking-wide border-b-2 border-transparent transition-colors duration-200 ${
                     pathname === item.href
-                      ? "text-accent-umber border-b border-accent-bronze"
+                      ? "text-accent-umber border-accent-bronze"
                       : "text-text-secondary hover:text-text-primary"
                   }`}
                 >
